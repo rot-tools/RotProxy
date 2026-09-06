@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.rotproxy.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [],
+  "client": [
+    "ClientConnectionMixin",
+    "ConnectScreenMixin",
+    "MultiplayerServerListPingerMixin",
+    "RotProxyMultiplayerScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
