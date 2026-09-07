@@ -10,7 +10,7 @@ SOCKS5, HTTP CONNECT and HTTPS proxy tunnels, saved profiles, a multiplayer shor
 
 1. Install **Minecraft Java 26.2**, **Java 25** and **Fabric Loader 0.19.5 or newer**.
 2. Install [Fabric API for 26.2](https://modrinth.com/mod/fabric-api/versions?g=26.2).
-3. Download `rotproxy-1.2.1+mc26.2.jar` from [Releases](https://github.com/rot-tools/RotProxy/releases/latest) and place it in your instance's `mods` folder. Remove the old RotProxy JAR from that instance.
+3. Download `rotproxy-1.2.2+mc26.2.jar` from [Modrinth](https://modrinth.com/mod/rotproxy) or [GitHub Releases](https://github.com/rot-tools/RotProxy/releases/latest) and place it in your instance's `mods` folder. Remove the old RotProxy JAR from that instance.
 4. Open **Multiplayer → RotProxy: Blocked**. Enter your proxy host, port, protocol and optional credentials.
 5. Use **TEST** to check a draft, then **APPLY** to activate it. Wait for **PROTECTED / CONNECTED** before joining.
 
@@ -72,5 +72,10 @@ See [docs/VALIDATION.md](docs/VALIDATION.md) for the tested scope and [CHANGELOG
 ## Source and license
 
 This source tree was recovered from the owner's `rotproxy-1.2.0+mc1.21.11.jar` and adapted to 26.2. Original comments and build history could not be recovered. The original MIT license is retained. Minecraft, Fabric API, development tools and the original binary are not committed. See [THIRD_PARTY.md](THIRD_PARTY.md).
+
+This 26.2 build continues the existing [RotProxy Modrinth project](https://modrinth.com/mod/rotproxy). Source and releases live at [rot-tools/RotProxy](https://github.com/rot-tools/RotProxy).
+
+- [Modrinth](https://modrinth.com/mod/rotproxy)
+- [GitHub](https://github.com/rot-tools/RotProxy)
 
 Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.

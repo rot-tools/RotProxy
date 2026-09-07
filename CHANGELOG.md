@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.2+mc26.2
+
+- Fix text-field padding and vertical alignment, including the cursor and selection.
+- Remove the logo from the settings screen's upper-left corner.
+- Align the settings title and profile indicator with the left edge of the form.
+
 ## 1.2.1+mc26.2
 
 - Port to Minecraft 26.2, Java 25, unobfuscated Mojang class names and the 26.2 GUI extraction API.

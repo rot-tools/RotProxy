@@ -1,4 +1,4 @@
-# Validation for 1.2.1+mc26.2
+# Validation for 1.2.2+mc26.2
 
 Validated locally on 2026-09-06 with Minecraft 26.2, Fabric Loader 0.19.5, Fabric API 0.159.0+26.2, Temurin Java 25 and an NVIDIA OpenGL renderer.
 
@@ -10,6 +10,7 @@ Validated locally on 2026-09-06 with Minecraft 26.2, Fabric Loader 0.19.5, Fabri
 - HTTPS CONNECT over TLS using a temporary test certificate; untrusted certificates were rejected.
 - Rejected proxy authentication and invalid IP-check responses failed without a direct fallback.
 - Minecraft client game test passed: required mixins applied, multiplayer shortcut opened the settings screen, NEW/DELETE/APPLY/CLOSE worked, invalid profiles stayed blocked, and draft edits survived resizing.
+- 1.2.2 visual pass: text fields use padded cursor/selection layout, the settings logo is removed, and the title/profile indicator align with the form.
 - UI widget bounds checked at 854 × 480 with GUI scale 2 (427 × 240 logical GUI); larger-window rendering also checked visually.
 - Blocked direct joining and server-list pings while disabled. Local singleplayer serialization remained unproxied; remote serialization was rejected while blocked.
 - Activated an isolated HTTP test proxy. A real Minecraft `Connection.connect` tunnel succeeded to a documentation-only destination intercepted by the fixture, confirming that the game connection took the proxy path.

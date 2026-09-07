@@ -14,9 +14,20 @@ extends EditBox {
 
     public RotProxyTextFieldWidget(Font textRenderer, int x, int y, int width, int height, Component text) {
         super(textRenderer, x, y, width, height, text);
-        this.setBordered(false);
+        this.setBordered(true);
         this.setTextColor(RotProxyTheme.TEXT);
         this.setTextColorUneditable(RotProxyTheme.TEXT_MUTED);
+    }
+
+    @Override
+    public boolean isBordered() {
+        // Keep EditBox's padded text/cursor layout, but draw only our themed border.
+        return false;
+    }
+
+    @Override
+    public int getInnerWidth() {
+        return this.getWidth() - 8;
     }
 
     public void setPasswordMode(boolean passwordMode) {

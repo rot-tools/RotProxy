@@ -10,11 +10,9 @@ import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
 
 /** Compact layout that also fits Minecraft's default 427 x 240 GUI. */
 public class RotProxyConfigScreen extends Screen {
-    private static final Identifier ICON = Identifier.fromNamespaceAndPath("rotproxy", "icon.png");
     private final Screen parent;
     private int left, top, panelWidth, selected;
     private ProxyProfile draft;
@@ -193,11 +191,10 @@ public class RotProxyConfigScreen extends Screen {
     public void extractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta) {
         graphics.fill(0, 0, width, height, RotProxyTheme.BACKDROP);
         RotProxyTheme.drawPanel(graphics, left, top, panelWidth, 236);
-        graphics.blit(ICON, left + 10, top + 6, left + 42, top + 38, 0, 1, 0, 1);
-        graphics.text(font, "ROT PROXY", left + 50, top + 11, RotProxyTheme.TEXT);
-        graphics.fill(left + 50, top + 26, left + 54, top + 30, RotProxyTheme.VIOLET);
+        graphics.text(font, "ROT PROXY", left + 12, top + 11, RotProxyTheme.TEXT);
+        graphics.fill(left + 12, top + 26, left + 16, top + 30, RotProxyTheme.VIOLET);
         String profileLabel = (selected + 1) + " / " + ProxyConfig.getProfiles().size() + "  " + draft.name;
-        graphics.text(font, font.plainSubstrByWidth(profileLabel, panelWidth - 126), left + 60, top + 24, RotProxyTheme.TEXT_MUTED);
+        graphics.text(font, font.plainSubstrByWidth(profileLabel, panelWidth - 126), left + 22, top + 24, RotProxyTheme.TEXT_MUTED);
         label(graphics, "PROFILE NAME", name.getX(), top + 43);
         label(graphics, "PROTOCOL", password.getX(), top + 43);
         label(graphics, "PROXY HOST", host.getX(), top + 75);
