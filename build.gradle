@@ -14,7 +14,7 @@ dependencies {
     implementation 'net.fabricmc.fabric-api:fabric-api:0.159.0+26.2'
     implementation include('io.netty:netty-codec-socks:4.2.15.Final') { transitive = false }
     implementation include('io.netty:netty-handler-proxy:4.2.15.Final') { transitive = false }
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.14.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:6.1.3'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
